@@ -1,5 +1,6 @@
 package roulette;
 
+import roulette.Wheel.SpinResult;
 import util.ConsoleReader;
 
 public class SingleNumberBet extends Bet {
@@ -17,5 +18,17 @@ public class SingleNumberBet extends Bet {
 	public boolean betIsMade(Wheel myWheel, String betChoice) {
 		return (myWheel.getNumber() == Integer.parseInt(betChoice));
 	}
+
+    @Override
+    public void place () {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public boolean isMade (SpinResult spinResult) {
+        // TODO Auto-generated method stub
+        return false;
+    }
 
 }

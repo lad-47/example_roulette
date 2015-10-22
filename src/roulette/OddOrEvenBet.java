@@ -1,5 +1,6 @@
 package roulette;
 
+import roulette.Wheel.SpinResult;
 import util.ConsoleReader;
 
 public class OddOrEvenBet extends Bet {
@@ -18,4 +19,16 @@ public class OddOrEvenBet extends Bet {
 		return (myWheel.getNumber() % 2 == 0 && betChoice.equals("even")) ||
                 (myWheel.getNumber() % 2 == 1 && betChoice.equals("odd"));
 	}
+
+    @Override
+    public void place () {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public boolean isMade (SpinResult spinResult) {
+        // TODO Auto-generated method stub
+        return false;
+    }
 }
